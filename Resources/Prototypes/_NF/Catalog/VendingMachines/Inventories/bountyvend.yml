@@ -21,6 +21,8 @@
     NFShieldReflective: 3
     IonizedBluespaceDustBag: 3 # Lonestar
     PinpointerScanner: 3 # Lonestar
+    NFBaseClothingNeckHolsterThigh: 3
+    NFBaseClothingNeckSheathThigh: 3
 # Mercenary
     ClothingHeadBandMercenary: 3
     ClothingHeadHatBeretMercenary: 3
