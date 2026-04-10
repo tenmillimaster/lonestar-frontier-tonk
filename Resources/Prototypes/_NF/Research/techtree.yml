@@ -1065,6 +1065,7 @@
   cost: 2500
   recipeUnlocks:
   - PlantAnalyzer
+  - NFCookingBag
   position: 0, 24
 
 - type: technology

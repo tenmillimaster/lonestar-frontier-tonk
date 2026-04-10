@@ -69,6 +69,7 @@
   - FoodPlateSmallPlastic
   - NapkinDrum
   - Napkin
+  - NFCookingBag
   - CondimentCupDispenser
   - CondimentCup
   - FoodCondimentSqueezeBottleClear
@@ -179,3 +180,4 @@
   - JanicartFlatpack # Frontier
   - PlantBagOfHolding # Delta-V
   - BluespaceTrashBag # Coyote
+  - NFCookingBag
