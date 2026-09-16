@@ -1,0 +1,32 @@
+- type: entity
+  parent: UtensilBase
+  id: BarSpoon
+  name: stir rod
+  description: A thin glass rod for mixing or decanting solutions.
+  components:
+  - type: Item
+    heldPrefix: spoon
+  - type: Sprite
+    sprite: Objects/Consumable/Food/skewer.rsi
+    state: 
+    layers:
+    - state: skewer
+  - type: Utensil
+    types:
+    - Spoon
+  - type: ReactionMixer
+    mixMessage: "spoon-mixing-success"
+    timeToMix: 1.0
+    reactionTypes:
+    - Stir
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 5
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
