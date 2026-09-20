@@ -30,7 +30,7 @@
   - type: ToggleCellDraw
   - type: ActivatableUI
     key: enum.RadarConsoleUiKey.Key
-    inHandsOnly: true
+    inHandsOnly: false # Lone Star
     singleUser: true
   - type: UserInterface
     interfaces:
