@@ -1,0 +1,12 @@
+- type: microwaveMealRecipe
+  id: RecipecleanMedipen
+  name: empty medipen
+  result: BlankMediPen
+  time: 3
+  group: Medicinal
+  solids:
+    : 1
+  reagents:
+    Ethanol: 7
+    Water: 3
+  recipeType: MedicalAssembler
