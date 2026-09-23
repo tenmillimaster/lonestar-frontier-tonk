@@ -1,9 +1,8 @@
 - type: entity
-  parent: CSBaseWeaponFrameHeavyPistolCybersun
+  parent: [CSBaseWeaponFrameHeavyPistolCybersun, NFBaseWeaponPistolChamber45]
   id: WeaponPistolAnaconda
   name: Anaconda
-  description: A heavy pistol capable of supplying itself with the ammo on the way using a built-in fabricator.
-  components:
+  description: The Anaconda looks almost as good on your hip as it does in the holovids, but why's it so damn heavy?
   - type: Sprite
     sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi
     layers:
@@ -15,15 +14,6 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
-  - type: ProjectileBatteryAmmoProvider
-    proto: BulletAnaconda
-    fireCost: 90
-  - type: Battery # 18 starting shots
-    maxCharge: 1620
-    startingCharge: 1620
-  - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargeRate: 30 # recharges 1 shot per 3 seconds
   #  rechargeSound: no work with BatterySelfRecharger
   #    path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
   #- type: Multishot # Requires cherrypicking 107142b
