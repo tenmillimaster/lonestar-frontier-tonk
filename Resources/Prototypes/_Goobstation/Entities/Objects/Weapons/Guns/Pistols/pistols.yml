@@ -28,7 +28,7 @@
   #    path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
   #- type: Multishot # Requires cherrypicking 107142b
   # LoneStar below
-  - type: Item
+  - type: Item1
     size: Normal
     shape:
     - 0,0,2,0
