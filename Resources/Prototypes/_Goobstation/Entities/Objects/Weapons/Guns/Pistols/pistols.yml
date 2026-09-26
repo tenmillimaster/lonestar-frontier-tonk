@@ -30,11 +30,6 @@
     autoRechargeRate: 22
     autoRechargePause: true
     autoRechargePauseTime: 6
-  - type: Item
-    size: Normal
-    shape:
-    - 0,0,2,0
-    - 0,1,0,1
   - type: Tag
     tags:
     - Sidearm
