@@ -1,0 +1,62 @@
+- type: entity
+  categories: [ HideSpawnMenu ]
+  name: Mouser
+  parent: [WeaponSubmachineGunDrozfld] 
+  id: LSWeaponSubMachineGunMouser
+  description: A handy carbine designed for backpackers and plinkers, exported to many sectors for its low price and humble features. Shoots .35 from common pistol magazines, of which it holds two.
+  components:
+    - type: Sprite
+      sprite: _LS/Objects/Weapons/Guns/SMGs/mouser.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-2
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Clothing
+      sprite: _NF/Objects/Weapons/Guns/SMGs/drozd.rsi # Frontier: add _NF prefix
+    - type: Gun
+      minAngle: 21
+      maxAngle: 32
+      fireRate: 5
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+      availableModes:
+      - SemiAuto
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          # startingItem: WHATEVERPISTOLMAG IS # Frontier
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - WHATEVERPISTOLMAG
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          # startingItem: CartridgePistol # Frontier
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol
+        gun_magazine_2:
+          name: Spare Magazine
+          # startingItem: WHATEVERPISTOLMAG IS # Frontier
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+          priority: 3
+          whitelist:
+            tags:
+              - WHATEVERPISTOLMAG
+          whitelistFailPopup: gun-magazine-whitelist-fail
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: true
+    - type: Appearance
