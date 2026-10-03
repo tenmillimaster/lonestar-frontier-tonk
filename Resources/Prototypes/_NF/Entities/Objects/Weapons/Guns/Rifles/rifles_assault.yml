@@ -19,7 +19,7 @@
   id: NFWeaponRifleAssaultEstoc
   parent: [NFBaseWeaponRifleAssaultChamber30, NFBaseWeaponFrameRifleAssaultCybersun]
   name: Estoc DMR
-  description: "A designated marksman rifle, designed as the Soland-Moss' long-range counterpart. Equipped with an extended 20-inch barrel a telescopic sight, and a much maligned burst limiter.\nFeeds from .30 rifle magazines." # LoneStar
+  description: "A designated marksman rifle, designed as the Soland-Moss' long-range counterpart. Equipped with a telescopic sight, an extended barrel, and a much maligned burst limiter.\nFeeds from .30 rifle magazines." # LoneStar
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
@@ -37,15 +37,21 @@
     - SemiAuto
     selectedMode: SemiAuto # LoneStar
     shotsPerBurst: 2 # LoneStar
-    burstFireRate: 6.4 # LoneStar, double the standard Cybersun ROF
-    burstCooldown: 1
+    burstFireRate: 11 # LoneStar
+    burstCooldown: 0.6 # LoneStar
   - type: SpeedModifiedOnWield
     walkModifier: 0.9
     sprintModifier: 0.9
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 2
+    maxOffset: 2.5 # LoneStar
     pvsIncrease: 0.2
+  # LoneStar Below
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,4,2
+  # End LoneStar
 
 - type: entity # TODO: switch to .25 rifle (caseless)
   id: NFWeaponRifleAssaultM90GrenadeLauncher
