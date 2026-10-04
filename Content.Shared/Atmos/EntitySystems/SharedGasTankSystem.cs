@@ -111,11 +111,13 @@ public abstract class SharedGasTankSystem : EntitySystem
     }
 
     public bool CanConnectToInternals(Entity<GasTankComponent> ent)
-    {
+{
+    if (!ent.Comp.CanConnectToInternals)
+        return false;
+    
         TryGetInternalsComp(ent, out _, out var internalsComp, ent.Comp.User);
         return internalsComp != null && internalsComp.BreathTools.Count != 0 && !ent.Comp.IsValveOpen;
-    }
-
+}
     public bool ConnectToInternals(Entity<GasTankComponent> ent, EntityUid? user = null)
     {
         var (owner, component) = ent;
