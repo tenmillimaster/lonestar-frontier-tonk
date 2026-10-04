@@ -48,6 +48,13 @@ public sealed partial class GasTankComponent : Component, IGasMixtureHolder
     public float OutputPressure = DefaultOutputPressure;
 
     /// <summary>
+    ///     Whether or not a gas tank is valid for internals usage.
+    /// </summary>
+    [DataField]
+    public bool CanConnectToInternals { get; set; } = true;  // Default to true
+
+
+    /// <summary>
     ///     The maximum allowed output pressure.
     /// </summary>
     [DataField]
