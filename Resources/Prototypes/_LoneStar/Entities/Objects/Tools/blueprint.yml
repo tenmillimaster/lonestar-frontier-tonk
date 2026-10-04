@@ -1,0 +1,10 @@
+- type: entity
+  parent: NFBaseBlueprint
+  id: LSBlueprintMeatHuman
+  categories: [ HideSpawnMenu ]
+  name: human flesh blueprint
+  description: A blueprint stained in blood. It can be inserted into a biogenerator.
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - 
