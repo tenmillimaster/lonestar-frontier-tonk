@@ -1,10 +1,87 @@
 - type: entity
   parent: NFBaseBlueprintExpedition
-  id: LSBlueprintMeatHuman
+  id: LSBlueprintMeatCannibal
   categories: [ HideSpawnMenu ]
-  name: human flesh blueprint
+  abstract: true
   description: A blueprint stained in blood. It can be inserted into a biogenerator.
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatHuman
+  name: human flesh blueprint
   components:
   - type: Blueprint
     providedRecipes:
-    - 
+    - FoodMeatHuman
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatCorgi
+  name: corgi flesh blueprint
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatCorgi
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatDiona
+  name: diona flesh blueprint
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatPlant
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatArachnid
+  name: arachnid flesh blueprint
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatSpider
+    - FoodMeatSpiderLeg
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatRouny
+  name: rouny flesh blueprint
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatRouny
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatReptilian
+  name: reptilian flesh blueprint
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatLizard
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatAvian
+  name: avian flesh blueprint
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatResomi
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatSlime
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatSlime
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatSheleg
+  name: sheleg flesh blueprint
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatSheleg
