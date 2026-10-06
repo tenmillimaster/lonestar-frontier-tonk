@@ -1,0 +1,37 @@
+- type: entity
+  id: LSWeaponSubMachineGunMouser
+  parent: [ NFBaseWeaponPistolChamber35, NFBaseWeaponFrameSubMachineGunFrontierGunsmith ]
+  name: Mouser
+  description: An affordable and handy carbine derived from submachineguns. Intended for recreational shooters and janitors who take their job too seriously. 
+  components:
+  - type: Gun
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: NFMagazinePistol35
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 3
+        whitelist: &whitelist35
+          tags:
+            - NFMagazinePistol35
+            - NFMagazineHighCapacityPistol35
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber: &chamber35Standard
+        name: Chamber
+        startingItem: NFCartridgePistol35
+        priority: 1 
+        whitelist:
+          tags:
+            - NFCartridgePistol35
+      foregrip_slot:
+        name: Magazine_Fore
+        priority: 2
+        whitelist:
+          tags:
+          - NFMagazinePistol35 
+          - NFMagazineHighCapacityPistol35
