@@ -28,24 +28,28 @@
 - type: entity
   parent: DVSmartFridge
   id: PunkSmartFridge2
-  name: Whizbang's Bang Wiz
+  name: Bang Wiz
   description: Keeps ya iron cold and fresh, choom!
   components:
-      - type: Sprite
-        sprite: Structures/Machines/smartfridge.rsi
-        snapCardinals: true
-        layers:
-        - state: smartfridge
-          map: ["enum.StorageVisualLayers.Base"]
-        - state: smartfridge_door
-          map: ["enum.StorageVisualLayers.Door"]
-          shader: unshaded
-        layers:
-        - sprite: _NF/Structures/Holo/graffiti/simple.rsi
-          state: holograffiti01
-          map: [ "graffiti" ]
-          shader: unshaded
-          scale: 0.7, 0.7
+      pack: PunkSmartFridgeAds
+    - type: Speech
+    - type: Sprite
+      sprite: Structures/Machines/smartfridge.rsi
+      snapCardinals: true
+      layers:
+      - state: smartfridge
+        map: ["enum.StorageVisualLayers.Base"]
+      - state: smartfridge_door
+        map: ["enum.StorageVisualLayers.Door"]
+        shader: unshaded
+      - state: panel
+        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+        visible: false
+      - sprite: _NF/Structures/Holo/graffiti/simple.rsi
+        state: holograffiti01
+        map: [ "graffiti" ]
+        shader: unshaded
+        scale: 0.7, 0.7
   - type: PointLight
     radius: 1.5
     energy: 2
