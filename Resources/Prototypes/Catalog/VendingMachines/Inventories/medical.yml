@@ -16,7 +16,7 @@
     BikeHornImplanter: 10 # Frontier
     LightImplanter: 10 # Frontier
     BoxFolderMedicalDoctor: 4294967295 # Frontier - infinite
-    MedTekCartridge: 3 # Frontier
+  # LoneStar   MedTekCartridge: 3
     # FoodSnackLollypopWrappedMystery: 10 # Goobstation - Lollypops
     FoodSnackLollypopWrappedTricordrazine: 4 # Goobstation - Lollypops
   emaggedInventory:
