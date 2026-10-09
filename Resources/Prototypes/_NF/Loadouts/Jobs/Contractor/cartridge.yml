@@ -8,14 +8,16 @@
   cartridges:
   - AppraisalCartridge
 
-- type: loadout
-  id: ContractorMedTekCartridge
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT1
-  price: 1000
-  cartridges:
-  - MedTekCartridge
+  # LoneStar below
+  # type: loadout
+  #  id: ContractorMedTekCartridge
+  #  effects:
+  #  - !type:GroupLoadoutEffect
+  #    proto: ContractorT1
+  #  price: 1000
+  #  cartridges:
+  #  - MedTekCartridge
+  # LoneStar end
 
 - type: loadout
   id: ContractorNetProbeCartridge
