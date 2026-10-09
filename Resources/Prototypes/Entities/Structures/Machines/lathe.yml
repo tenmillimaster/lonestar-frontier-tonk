@@ -708,7 +708,13 @@
     - beaker_slot
     spriteLayers:
     - beaker
-  - type: OreSiloClient # LoneStar
+  # LoneStar below
+  - type: OreSiloClient
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - LSBlueprintBiogen
+  # LoneStar end
 
 - type: entity
   parent: [ BaseLathe, BaseLatheMagnet ]
