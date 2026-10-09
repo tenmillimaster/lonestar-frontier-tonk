@@ -86,3 +86,12 @@
   - type: Blueprint
     providedRecipes:
     - FoodMeatSheleg
+
+- type: entity
+  parent: LSBlueprintMeatCannibal
+  id: LSBlueprintMeatGoblin
+  name: goblin flesh blueprint
+  components:
+  - type: Blueprint
+    providedRecipes:
+    - FoodMeatGoblin
