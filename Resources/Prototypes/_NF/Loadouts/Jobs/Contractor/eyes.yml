@@ -69,26 +69,27 @@
   equipment:
     eyes: ClothingEyesHudMedical
 
-- type: loadout
-  id: ContractorClothingEyesPunkGoggles
-  name: punk goggles (random)
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT1
-  price: 0
-  equipment:
-    eyes: ClothingEyesPunkGoggles
+  # LoneStar below
+  # - type: loadout
+  #  id: ContractorClothingEyesPunkGoggles
+  #  name: punk goggles (random)
+  #   effects:
+  #   - !type:GroupLoadoutEffect
+  #     proto: ContractorT1
+  #   price: 0
+  #   equipment:
+  #     eyes: ClothingEyesPunkGoggles
 
-- type: loadout
-  id: ContractorClothingEyesPunkInfoShades
-  name: punk infoshades (random)
-  effects:
-  - !type:GroupLoadoutEffect
-    proto: ContractorT1
-  price: 0
-  equipment:
-    eyes: ClothingEyesPunkInfoShades
-
+  # - type: loadout
+  #   id: ContractorClothingEyesPunkInfoShades
+  #   name: punk infoshades (random)
+  #   effects:
+  #   - !type:GroupLoadoutEffect
+  #     proto: ContractorT1
+  #   price: 0
+  #   equipment:
+  #     eyes: ClothingEyesPunkInfoShades
+  # LoneStar end
 
 #T2
 - type: loadout
