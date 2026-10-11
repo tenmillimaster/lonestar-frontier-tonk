@@ -16,3 +16,20 @@
     tags:
     - WhitelistChameleon
     - HudMedichem
+
+- type: entity
+  id: ClothingEyesPunkInfoShadesFake
+  parent: ClothingEyesPunkInfoShades
+  name: hackerman shades
+  description: These shades are ABSOLUTELY, TOTALLY, 100% what real hackermans wear, and are not an imitation of the real thing you bought to look like a real hackermans.
+  - type: ShowHealthBars
+    damageContainers:
+
+- type: entity
+  id: ClothingEyesPunkGogglesFake
+  parent: ClothingEyesPunkGoggles
+  name: hackerman goggles
+  description: These goggles are ABSOLUTELY, TOTALLY, 100% what real hackermans wear, and are not an imitation of the real thing you bought to look like a real hackermans.
+  - type: ShowHealthBars
+    damageContainers:
+
