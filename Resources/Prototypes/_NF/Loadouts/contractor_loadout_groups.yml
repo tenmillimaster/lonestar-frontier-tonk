@@ -773,8 +773,8 @@
   - ContractorClothingEyesHudDiagnostic
   - ContractorClothingEyesGlassesMeson
   - ContractorClothingEyesHudMedical
-  - ContractorClothingEyesPunkGoggles # Punkish (Randomized visuals)
-  - ContractorClothingEyesPunkInfoShades # Punkish (Randomized visuals)
+  #  - ContractorClothingEyesPunkGoggles # LoneStar, go find these
+  #  - ContractorClothingEyesPunkInfoShades # LoneStar, go find these
   - ContractorClothingEyesEyepatchHudDiag
   - ContractorClothingEyesEyepatchHudMedical
 
