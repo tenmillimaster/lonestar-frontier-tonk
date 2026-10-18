@@ -1,3 +1,17 @@
+- type: latheRecipePack
+  id: LSCultistLathePack
+  recipes:
+  - LSBlueprintMeatHuman
+  - LSBlueprintMeatCorgi
+  - LSBlueprintMeatDiona
+  - LSBlueprintMeatArachnid
+  - LSBlueprintMeatRouny
+  - LSBlueprintMeatReptilian
+  - LSBlueprintMeatAvian
+  - LSBlueprintMeatSheleg
+  - LSBlueprintMeatGoblin
+  - LSBlueprintMeatSlime
+
 - type: entity
   parent: NFBaseBlueprintExpedition
   id: LSBlueprintMeatCannibal

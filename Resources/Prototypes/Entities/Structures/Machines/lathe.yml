@@ -684,6 +684,7 @@
       machine_board: !type:Container
       machine_parts: !type:Container
       beaker_slot: !type:ContainerSlot
+      blueprint: !type:Container # LoneStar
   - type: Lathe
     reagentOutputSlotId: beaker_slot
     idleState: icon
@@ -713,6 +714,9 @@
     spriteLayers:
     - beaker
   # LoneStar below
+  - type: EmptyOnMachineDeconstruct
+    containers:
+    - blueprint
   - type: OreSiloClient
   - type: BlueprintReceiver
     whitelist:
