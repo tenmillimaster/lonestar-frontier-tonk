@@ -13,7 +13,7 @@
   - LSBlueprintMeatSlime
 
 - type: entity
-  parent: NFBaseBlueprintExpedition
+- parent: [ BaseC3CultContraband, NFBaseBlueprintExpedition ]
   id: LSBlueprintMeatCannibal
   categories: [ HideSpawnMenu ]
   abstract: true
