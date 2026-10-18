@@ -15,9 +15,13 @@
 - type: entity
 - parent: [ BaseC3CultContraband, NFBaseBlueprintExpedition ]
   id: LSBlueprintMeatCannibal
-  categories: [ HideSpawnMenu ]
   abstract: true
   description: A blueprint stained in blood. It can be inserted into a biogenerator.
+  - type: Tag
+    tags:
+    - LSBlueprintBiogen
+    - Document
+    - Paper
 
 - type: entity
   parent: LSBlueprintMeatCannibal
