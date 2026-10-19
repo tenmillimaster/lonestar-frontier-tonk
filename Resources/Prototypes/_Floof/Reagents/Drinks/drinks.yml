@@ -57,9 +57,15 @@
         factor: 2
     Narcotic:
       effects:
-      - !type:MovespeedModifier
-        walkSpeedModifier: 1.15
-        sprintSpeedModifier: 1.15
+  # LoneStar below
+  #   - !type:MovespeedModifier
+  #     walkSpeedModifier: 1.15
+  #     sprintSpeedModifier: 1.15
+      - !type:AdjustReagent
+        conditions
+        reagent: Caffeine
+        amount: 1.5
+  # LoneStar end
       - !type:GenericStatusEffect
         key: Stutter
         component: StutteringAccent

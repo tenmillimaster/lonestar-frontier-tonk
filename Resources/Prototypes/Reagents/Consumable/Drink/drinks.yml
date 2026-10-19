@@ -145,6 +145,15 @@
   metamorphicMaxFillLevels: 4
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
+  # LoneStar below
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Caffeine
+          max: 30
+        reagent: Caffeine 
+        amount: 0.5
+  # LoneStar end
 
 - type: reagent
   id: Grenadine
@@ -211,6 +220,15 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
+  # LoneStar below
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Caffeine
+          max: 30
+        reagent: Caffeine 
+        amount: 0.5
+  # LoneStar end
 
 - type: reagent
   id: IcedTea
@@ -238,9 +256,9 @@
         conditions: # Frontier
         - !type:ReagentThreshold # Frontier
           reagent: Caffeine # Frontier
-          max: 60 # Frontier
+          max: 30 # LoneStar
         reagent: Caffeine # Frontier
-        amount: 1 # Frontier
+        amount: 0.5 # Frontier
 
 - type: reagent
   id: JuiceBerryPoison
@@ -473,9 +491,9 @@
         conditions: # Frontier
         - !type:ReagentThreshold # Frontier
           reagent: Caffeine # Frontier
-          max: 60 # Frontier
+          max: 30 # Frontier
         reagent: Caffeine # Frontier
-        amount: 1 # Frontier
+        amount: 0.5 # Frontier
   metamorphicSprite:
     sprite: Objects/Consumable/Drinks/teaglass.rsi
     state: icon_empty

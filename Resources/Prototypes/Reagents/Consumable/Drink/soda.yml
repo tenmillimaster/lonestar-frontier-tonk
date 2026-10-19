@@ -22,6 +22,15 @@
         key: Drowsiness
         time: 1.0
         type: Remove
+  # LoneStar below
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Caffeine
+          max: 60
+        reagent: Caffeine 
+        amount: 0.5
+  # LoneStar end
 
 - type: reagent
   id: RoyRogers
@@ -51,6 +60,15 @@
   physicalDesc: reagent-physical-desc-fizzy
   flavor: soda
   color: "#2E6671"
+  # LoneStar below
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Caffeine
+          max: 60
+        reagent: Caffeine 
+        amount: 0.5
+  # LoneStar end
 
 - type: reagent
   id: DrGibb
@@ -66,6 +84,15 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
+  # LoneStar below
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Caffeine
+          max: 60
+        reagent: Caffeine 
+        amount: 0.5
+  # LoneStar end
 
 - type: reagent
   id: EnergyDrink
@@ -88,6 +115,11 @@
         reagent: Theobromine
         amount: 0.1
   fizziness: 0.4
+  # Lonestar below
+      - !type:AdjustReagent
+        reagent: Caffeine
+        amount: 1.5
+  # LoneStar end
 
 - type: reagent
   id: GrapeSoda
@@ -142,6 +174,11 @@
   flavor: pwrgamesoda
   color: "#9385bf"
   fizziness: 0.9 # gamers crave the fizz
+  # Lonestar below
+      - !type:AdjustReagent
+        reagent: Caffeine
+        amount: 1.5
+  # LoneStar end
 
 - type: reagent
   id: RootBeer
@@ -223,6 +260,15 @@
   metamorphicMaxFillLevels: 5
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
+  # LoneStar below
+      - !type:AdjustReagent
+        conditions:
+        - !type:ReagentThreshold
+          reagent: Caffeine
+          max: 60
+        reagent: Caffeine 
+        amount: 0.5
+  # LoneStar end
 
 - type: reagent
   id: SpaceUp
@@ -267,9 +313,14 @@
       effects:
       - !type:SatiateThirst
         factor: 2
-      - !type:AdjustReagent
+       - !type:AdjustReagent
         reagent: Theobromine
         amount: 0.1
+  # Lonestar below
+      - !type:AdjustReagent
+        reagent: Caffeine
+        amount: 1.5
+  # LoneStar end
     Poison:
       effects:
       - !type:HealthChange
