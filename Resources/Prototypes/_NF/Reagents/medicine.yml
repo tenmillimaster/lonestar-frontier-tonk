@@ -65,7 +65,7 @@
         conditions:
         - !type:ReagentThreshold
           reagent: Caffeine
-          max: 40
+          max: 40 # LoneStar
         walkSpeedModifier: 1.02
         sprintSpeedModifier: 1.02
   # LoneStar below
