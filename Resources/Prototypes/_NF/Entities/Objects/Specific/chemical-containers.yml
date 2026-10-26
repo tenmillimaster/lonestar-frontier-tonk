@@ -94,9 +94,9 @@
     - type: Destructible # Hacky - takes damage, but shouldn't be destructible
       thresholds: []
     - type: Tag
-      tags:
-      - ChemDispensable
-      - DrinkContainer
+      tags: # LoneStar
+      - ChemDispensable # LoneStar
+      - DrinkBottle # LoneStar
 
 # Frontier: an unspillable jug for welding fuel.
 - type: entity
