@@ -183,6 +183,10 @@
   - type: TrashOnSolutionEmpty
     solution: beaker
 
+      tags: # LoneStar
+      - ChemDispensable # LoneStar
+      - DrinkBottle # LoneStar
+
 - type: entity
   parent: JerryCan
   suffix: welding fuel
