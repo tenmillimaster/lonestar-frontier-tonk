@@ -1,0 +1,11 @@
+using Robust.Shared.GameStates;
+
+namespace Content.Shared._LoneStar.Weapons.Ranged.Components;
+
+/// <summary>
+/// Makes a revolver eject spent cartridges automatically after firing, similar to how semi-auto pistols work.
+/// </summary>
+[RegisterComponent, NetworkedComponent]
+public sealed partial class RevolverEjectOnShotComponent : Component
+{
+}

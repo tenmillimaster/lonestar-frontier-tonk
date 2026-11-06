@@ -1,8 +1,12 @@
- using Content.Shared.Weapons.Ranged.Components;
+using System.Linq;
+using Content.Shared._LoneStar.Weapons.Ranged.Components;
+using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Weapons.Ranged.Systems;
+using Robust.Shared.Containers;
+using Robust.Shared.Network;
 
-namespace Content.Server.Weapons.Ranged.Systems;
+namespace Content.Server._LoneStar.Weapons.Ranged.Systems;
 
 /// <summary>
 /// System that handles automatic shell ejection for revolvers equipped with the RevolverEjectOnShotComponent.
